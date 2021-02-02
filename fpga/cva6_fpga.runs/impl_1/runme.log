@@ -1,0 +1,750 @@
+
+*** Running vivado
+    with args -log cva6_zybo_z7_20.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source cva6_zybo_z7_20.tcl -notrace
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cva6_zybo_z7_20.tcl -notrace
+Command: open_checkpoint /home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2140.234 ; gain = 0.000 ; free physical = 3626 ; free virtual = 4905
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.59 ; elapsed = 00:00:00.60 . Memory (MB): peak = 2148.539 ; gain = 0.000 ; free physical = 3081 ; free virtual = 4403
+INFO: [Netlist 29-17] Analyzing 2781 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2680.082 ; gain = 2.969 ; free physical = 2459 ; free virtual = 3782
+Restored from archive | CPU: 0.340000 secs | Memory: 1.398232 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00.23 ; elapsed = 00:00:00.34 . Memory (MB): peak = 2680.082 ; gain = 2.969 ; free physical = 2459 ; free virtual = 3782
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2680.082 ; gain = 0.000 ; free physical = 2464 ; free virtual = 3787
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.1 (64-bit) build 2902540
+open_checkpoint: Time (s): cpu = 00:00:24 ; elapsed = 00:01:17 . Memory (MB): peak = 2680.082 ; gain = 539.848 ; free physical = 2464 ; free virtual = 3787
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2717.871 ; gain = 37.789 ; free physical = 2455 ; free virtual = 3778
+
+Starting Cache Timing Information Task
+Ending Cache Timing Information Task | Checksum: bd72a81a
+
+Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.08 . Memory (MB): peak = 2717.871 ; gain = 0.000 ; free physical = 2455 ; free virtual = 3778
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 1 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 143ed1490
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2392 ; free virtual = 3716
+INFO: [Opt 31-389] Phase Retarget created 4 cells and removed 150 cells
+INFO: [Opt 31-1021] In phase Retarget, 30 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 27 inverter(s) to 47 load pin(s).
+Phase 2 Constant propagation | Checksum: f28ccd1d
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2392 ; free virtual = 3716
+INFO: [Opt 31-389] Phase Constant propagation created 876 cells and removed 3446 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 31 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: debfd03e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2388 ; free virtual = 3712
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 1433 cells
+INFO: [Opt 31-1021] In phase Sweep, 503 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: debfd03e
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2388 ; free virtual = 3712
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: debfd03e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2388 ; free virtual = 3712
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: debfd03e
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2388 ; free virtual = 3712
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 38 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |               4  |             150  |                                             30  |
+|  Constant propagation         |             876  |            3446  |                                             31  |
+|  Sweep                        |               0  |            1433  |                                            503  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             38  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.13 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2388 ; free virtual = 3712
+Ending Logic Optimization Task | Checksum: c7130073
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2851.871 ; gain = 0.000 ; free physical = 2388 ; free virtual = 3712
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 38 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 0 WE to EN ports
+Number of BRAM Ports augmented: 0 newly gated: 0 Total Ports: 76
+Ending PowerOpt Patch Enables Task | Checksum: c7130073
+
+Time (s): cpu = 00:00:00.28 ; elapsed = 00:00:00.34 . Memory (MB): peak = 3164.195 ; gain = 0.000 ; free physical = 2292 ; free virtual = 3619
+Ending Power Optimization Task | Checksum: c7130073
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:57 . Memory (MB): peak = 3164.195 ; gain = 312.324 ; free physical = 2328 ; free virtual = 3656
+
+Starting Final Cleanup Task
+Ending Final Cleanup Task | Checksum: c7130073
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3164.195 ; gain = 0.000 ; free physical = 2328 ; free virtual = 3656
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3164.195 ; gain = 0.000 ; free physical = 2328 ; free virtual = 3656
+Ending Netlist Obfuscation Task | Checksum: c7130073
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3164.195 ; gain = 0.000 ; free physical = 2328 ; free virtual = 3656
+INFO: [Common 17-83] Releasing license: Implementation
+36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:01:22 ; elapsed = 00:01:11 . Memory (MB): peak = 3164.195 ; gain = 484.113 ; free physical = 2328 ; free virtual = 3656
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2293 ; free virtual = 3625
+INFO: [Common 17-1381] The checkpoint '/home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 3168.195 ; gain = 4.000 ; free physical = 2286 ; free virtual = 3627
+INFO: [runtcl-4] Executing : report_drc -file cva6_zybo_z7_20_drc_opted.rpt -pb cva6_zybo_z7_20_drc_opted.pb -rpx cva6_zybo_z7_20_drc_opted.rpx
+Command: report_drc -file cva6_zybo_z7_20_drc_opted.rpt -pb cva6_zybo_z7_20_drc_opted.pb -rpx cva6_zybo_z7_20_drc_opted.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][fu][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][fu][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][fu][2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][fu][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][fu][2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/status_cnt_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/status_cnt_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 21 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'RuntimeOptimized' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2264 ; free virtual = 3609
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: b1d474b0
+
+Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.12 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2264 ; free virtual = 3609
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2264 ; free virtual = 3609
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+WARNING: [Place 30-574] Poor placement for routing between an IO pin and BUFG. This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	tck_IBUF_inst (IBUF.O) is locked to IOB_X1Y112
+	tck_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1523df5c3
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2238 ; free virtual = 3587
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 1b9a3e343
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2176 ; free virtual = 3525
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 1b9a3e343
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2176 ; free virtual = 3525
+Phase 1 Placer Initialization | Checksum: 1b9a3e343
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2173 ; free virtual = 3523
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1818b551f
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:15 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2132 ; free virtual = 3482
+
+Phase 2.2 Global Placement Core
+Phase 2.2 Global Placement Core | Checksum: 19fdf0d61
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:43 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2122 ; free virtual = 3474
+Phase 2 Global Placement | Checksum: 19fdf0d61
+
+Time (s): cpu = 00:01:03 ; elapsed = 00:00:43 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2145 ; free virtual = 3496
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 22e6b3bda
+
+Time (s): cpu = 00:01:09 ; elapsed = 00:00:47 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2147 ; free virtual = 3498
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 13e8d8eea
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:54 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2142 ; free virtual = 3494
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 13d333d1c
+
+Time (s): cpu = 00:01:21 ; elapsed = 00:00:54 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2142 ; free virtual = 3494
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 173e5a589
+
+Time (s): cpu = 00:01:22 ; elapsed = 00:00:55 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2142 ; free virtual = 3494
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 27aeedd65
+
+Time (s): cpu = 00:01:44 ; elapsed = 00:01:18 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2095 ; free virtual = 3447
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 1db1bbbce
+
+Time (s): cpu = 00:01:46 ; elapsed = 00:01:21 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2098 ; free virtual = 3450
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 1db1bbbce
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:21 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2098 ; free virtual = 3450
+Phase 3 Detail Placement | Checksum: 1db1bbbce
+
+Time (s): cpu = 00:01:47 ; elapsed = 00:01:21 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2098 ; free virtual = 3450
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 191d6c5ef
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=0.899 | TNS=0.000 |
+Phase 1 Physical Synthesis Initialization | Checksum: 14fa0c28b
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2099 ; free virtual = 3451
+INFO: [Place 46-33] Processed net i_rstgen_main/i_rstgen_bypass/synch_regs_q_reg[3]_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 1 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 1, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: 163d55120
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2098 ; free virtual = 3450
+Phase 4.1.1.1 BUFG Insertion | Checksum: 191d6c5ef
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:37 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2098 ; free virtual = 3450
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.899. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 1d6e28e02
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:38 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2099 ; free virtual = 3451
+Phase 4.1 Post Commit Optimization | Checksum: 1d6e28e02
+
+Time (s): cpu = 00:02:10 ; elapsed = 00:01:38 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2099 ; free virtual = 3451
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 1d6e28e02
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:38 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2101 ; free virtual = 3453
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 1d6e28e02
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:39 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2102 ; free virtual = 3454
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2102 ; free virtual = 3454
+Phase 4.4 Final Placement Cleanup | Checksum: 1c1599825
+
+Time (s): cpu = 00:02:11 ; elapsed = 00:01:39 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2102 ; free virtual = 3454
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1c1599825
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:39 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2102 ; free virtual = 3454
+Ending Placer Task | Checksum: 1390dcf80
+
+Time (s): cpu = 00:02:12 ; elapsed = 00:01:39 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2102 ; free virtual = 3454
+INFO: [Common 17-83] Releasing license: Implementation
+62 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:16 ; elapsed = 00:01:43 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2145 ; free virtual = 3497
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 1984 ; free virtual = 3472
+INFO: [Common 17-1381] The checkpoint '/home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:11 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2120 ; free virtual = 3490
+INFO: [runtcl-4] Executing : report_io -file cva6_zybo_z7_20_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.11 ; elapsed = 00:00:00.16 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2110 ; free virtual = 3480
+INFO: [runtcl-4] Executing : report_utilization -file cva6_zybo_z7_20_utilization_placed.rpt -pb cva6_zybo_z7_20_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file cva6_zybo_z7_20_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.21 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2117 ; free virtual = 3487
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+72 Infos, 22 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:15 ; elapsed = 00:00:10 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2086 ; free virtual = 3456
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 1926 ; free virtual = 3432
+INFO: [Common 17-1381] The checkpoint '/home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:11 . Memory (MB): peak = 3168.195 ; gain = 0.000 ; free physical = 2058 ; free virtual = 3447
+Command: route_design -directive RuntimeOptimized
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC PLCK-12] Clock Placer Checks: Poor placement for routing between an IO pin and BUFG. 
+Resolution: Poor placement of an IO pin and a BUFG has resulted in the router using a non-dedicated path between the two.  There are several things that could trigger this DRC, each of which can cause unpredictable clock insertion delays that result in poor timing.  This DRC could be caused by any of the following: (a) a clock port was placed on a pin that is not a CCIO-pin (b)the BUFG has not been placed in the same half of the device or SLR as the CCIO-pin (c) a single ended clock has been placed on the N-Side of a differential pair CCIO-pin.
+ This is normally an ERROR but the CLOCK_DEDICATED_ROUTE constraint is set to FALSE allowing your design to continue. The use of this override is highly discouraged as it may lead to very poor timing results. It is recommended that this error condition be corrected in the design.
+
+	tck_IBUF_inst (IBUF.O) is locked to IOB_X1Y112
+	tck_IBUF_BUFG_inst (BUFG.I) is provisionally placed by clockplacer on BUFGCTRL_X0Y0
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 1 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'RuntimeOptimized'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: 57748f27 ConstDB: 0 ShapeSum: e1994059 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 1bb9c78e0
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 3259.082 ; gain = 90.887 ; free physical = 1893 ; free virtual = 3282
+Post Restoration Checksum: NetGraph: e1579366 NumContArr: da44e57a Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1bb9c78e0
+
+Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 3259.082 ; gain = 90.887 ; free physical = 1902 ; free virtual = 3291
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1bb9c78e0
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 3259.082 ; gain = 90.887 ; free physical = 1890 ; free virtual = 3280
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1bb9c78e0
+
+Time (s): cpu = 00:00:28 ; elapsed = 00:00:18 . Memory (MB): peak = 3259.082 ; gain = 90.887 ; free physical = 1890 ; free virtual = 3280
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 1a0ed0ba0
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:32 . Memory (MB): peak = 3291.621 ; gain = 123.426 ; free physical = 1863 ; free virtual = 3253
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.420  | TNS=0.000  | WHS=-0.148 | THS=-218.298|
+
+Phase 2 Router Initialization | Checksum: 1b6b91656
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:38 . Memory (MB): peak = 3291.621 ; gain = 123.426 ; free physical = 1860 ; free virtual = 3250
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.00621311 %
+  Global Horizontal Routing Utilization  = 0.00490196 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 45700
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 45700
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: fe7c45db
+
+Time (s): cpu = 00:01:12 ; elapsed = 00:00:46 . Memory (MB): peak = 3295.621 ; gain = 127.426 ; free physical = 1856 ; free virtual = 3246
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 6314
+ Number of Nodes with overlaps = 311
+ Number of Nodes with overlaps = 29
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.428  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1252ad36b
+
+Time (s): cpu = 00:01:49 ; elapsed = 00:01:12 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1849 ; free virtual = 3239
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.428  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1380ad530
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:14 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1849 ; free virtual = 3239
+Phase 4 Rip-up And Reroute | Checksum: 1380ad530
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:14 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1849 ; free virtual = 3239
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: 1380ad530
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:14 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1849 ; free virtual = 3239
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 1380ad530
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:14 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1849 ; free virtual = 3239
+Phase 5 Delay and Skew Optimization | Checksum: 1380ad530
+
+Time (s): cpu = 00:01:52 ; elapsed = 00:01:14 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1849 ; free virtual = 3239
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 1be00c568
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:18 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1848 ; free virtual = 3239
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=1.428  | TNS=0.000  | WHS=0.035  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 14a2d5dd8
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:18 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1848 ; free virtual = 3239
+Phase 6 Post Hold Fix | Checksum: 14a2d5dd8
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:18 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1847 ; free virtual = 3238
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 11.9187 %
+  Global Horizontal Routing Utilization  = 16.0669 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: f2398c6f
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:19 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1848 ; free virtual = 3238
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: f2398c6f
+
+Time (s): cpu = 00:01:58 ; elapsed = 00:01:19 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1847 ; free virtual = 3237
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: 15caf13bf
+
+Time (s): cpu = 00:02:02 ; elapsed = 00:01:23 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1845 ; free virtual = 3235
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=1.428  | TNS=0.000  | WHS=0.035  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: 15caf13bf
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1853 ; free virtual = 3243
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:23 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1878 ; free virtual = 3268
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+89 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:27 . Memory (MB): peak = 3297.621 ; gain = 129.426 ; free physical = 1878 ; free virtual = 3268
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3305.625 ; gain = 0.000 ; free physical = 1705 ; free virtual = 3247
+INFO: [Common 17-1381] The checkpoint '/home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:16 ; elapsed = 00:00:12 . Memory (MB): peak = 3305.625 ; gain = 8.004 ; free physical = 1849 ; free virtual = 3261
+INFO: [runtcl-4] Executing : report_drc -file cva6_zybo_z7_20_drc_routed.rpt -pb cva6_zybo_z7_20_drc_routed.pb -rpx cva6_zybo_z7_20_drc_routed.rpx
+Command: report_drc -file cva6_zybo_z7_20_drc_routed.rpt -pb cva6_zybo_z7_20_drc_routed.pb -rpx cva6_zybo_z7_20_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file /home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 3319.410 ; gain = 13.785 ; free physical = 1831 ; free virtual = 3244
+INFO: [runtcl-4] Executing : report_methodology -file cva6_zybo_z7_20_methodology_drc_routed.rpt -pb cva6_zybo_z7_20_methodology_drc_routed.pb -rpx cva6_zybo_z7_20_methodology_drc_routed.rpx
+Command: report_methodology -file cva6_zybo_z7_20_methodology_drc_routed.rpt -pb cva6_zybo_z7_20_methodology_drc_routed.pb -rpx cva6_zybo_z7_20_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file /home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/cva6_zybo_z7_20_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:33 ; elapsed = 00:00:19 . Memory (MB): peak = 3447.410 ; gain = 128.000 ; free physical = 1793 ; free virtual = 3205
+INFO: [runtcl-4] Executing : report_power -file cva6_zybo_z7_20_power_routed.rpt -pb cva6_zybo_z7_20_power_summary_routed.pb -rpx cva6_zybo_z7_20_power_routed.rpx
+Command: report_power -file cva6_zybo_z7_20_power_routed.rpt -pb cva6_zybo_z7_20_power_summary_routed.pb -rpx cva6_zybo_z7_20_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+102 Infos, 23 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:27 ; elapsed = 00:00:17 . Memory (MB): peak = 3447.410 ; gain = 0.000 ; free physical = 1740 ; free virtual = 3163
+INFO: [runtcl-4] Executing : report_route_status -file cva6_zybo_z7_20_route_status.rpt -pb cva6_zybo_z7_20_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file cva6_zybo_z7_20_timing_summary_routed.rpt -pb cva6_zybo_z7_20_timing_summary_routed.pb -rpx cva6_zybo_z7_20_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file cva6_zybo_z7_20_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file cva6_zybo_z7_20_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file cva6_zybo_z7_20_bus_skew_routed.rpt -pb cva6_zybo_z7_20_bus_skew_routed.pb -rpx cva6_zybo_z7_20_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  2 17:51:46 2021...
+
+*** Running vivado
+    with args -log cva6_zybo_z7_20.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source cva6_zybo_z7_20.tcl -notrace
+
+
+****** Vivado v2020.1 (64-bit)
+  **** SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+  **** IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source cva6_zybo_z7_20.tcl -notrace
+Command: open_checkpoint cva6_zybo_z7_20_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.14 . Memory (MB): peak = 2140.297 ; gain = 0.000 ; free physical = 3474 ; free virtual = 4897
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Netlist sorting complete. Time (s): cpu = 00:00:00.58 ; elapsed = 00:00:00.58 . Memory (MB): peak = 2148.602 ; gain = 0.000 ; free physical = 2978 ; free virtual = 4402
+INFO: [Netlist 29-17] Analyzing 2706 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2710.277 ; gain = 43.039 ; free physical = 2303 ; free virtual = 3727
+Restored from archive | CPU: 3.300000 secs | Memory: 52.970200 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2710.277 ; gain = 43.039 ; free physical = 2303 ; free virtual = 3727
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2710.277 ; gain = 0.000 ; free physical = 2309 ; free virtual = 3733
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2020.1 (64-bit) build 2902540
+open_checkpoint: Time (s): cpu = 00:00:27 ; elapsed = 00:01:18 . Memory (MB): peak = 2710.277 ; gain = 569.980 ; free physical = 2308 ; free virtual = 3732
+Command: write_bitstream -force cva6_zybo_z7_20.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__0 input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__0/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__0 input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__0/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__2 input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__2/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__2 input i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__2/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d multiplier stage i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__0 multiplier stage i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__0/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 multiplier stage i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__2 multiplier stage i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__2/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[0]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[10]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[11]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[12]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[13]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[14]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[15]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[16]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[1]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[2]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[3]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[4]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[5]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[6]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[7]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[8]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[9]). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[0]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[10]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[11]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[12]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[13]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[14]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[15]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[16]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[1]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[2]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[3]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[4]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[5]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[6]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[7]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[8]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC DPOR-1] Asynchronous load check: DSP i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_d__1 output is connected to registers with an asynchronous reset (i_ariane/ex_stage_i/i_mult/i_multiplier/mult_result_q_reg[9]__1). This is preventing the possibility of merging these registers in to the DSP Block since the DSP block registers only possess synchronous reset capability.  It is suggested to recode or change these registers to remove the reset or use a synchronous reset to get the best optimization for performance, power and area.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/i_load_unit/state_q_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][fu][0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][fu][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][fu][2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][vaddr][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[0][valid]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][fu][1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][10]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][11]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/mem_q_reg[1][vaddr][7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/lsu_bypass_i/read_pointer_q_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg has an input control pin i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg/ADDRARDADDR[13] (net: i_ariane/i_cache_subsystem/i_wt_dcache/i_wt_dcache_mem/gen_data_banks[0].i_data_sram/genblk1[0].i_ram/Mem_DP_reg_1[7]) which is driven by a register (i_ariane/ex_stage_i/lsu_i/no_mmu_gen.mmu_paddr_reg[13]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC RTSTAT-10] No routable loads: 35 net(s) have no routable loads. The problem bus(es) and/or net(s) are i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, i_dmi_jtag/i_dmi_cdc/i_cdc_resp/i_dst/data_dst_q[resp][1:0], i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0], i_axi_dwidth_converter_dm_slave/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[2:0]... and (the first 15 of 22 listed).
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 70 Warnings
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./cva6_zybo_z7_20.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-186] '/home/riscv/contest_Etienne/fpga/cva6_fpga.runs/impl_1/usage_statistics_webtalk.xml' has been successfully sent to Xilinx on Tue Feb  2 17:55:47 2021. For additional details about this file, please refer to the WebTalk help file at /opt/Xilinx/Vivado/2020.1/doc/webtalk_introduction.html.
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 70 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:47 ; elapsed = 00:02:19 . Memory (MB): peak = 3248.461 ; gain = 538.184 ; free physical = 2194 ; free virtual = 3630
+INFO: [Common 17-206] Exiting Vivado at Tue Feb  2 17:55:48 2021...
